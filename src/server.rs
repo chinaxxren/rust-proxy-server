@@ -6,7 +6,7 @@ use hyper_tls::HttpsConnector;
 use std::sync::Arc;
 
 use crate::cache::{CacheEntry, CacheMeta, ProxyCache};
-use crate::constants::;
+use crate::constants::MAX_FILE_SIZE;
 use crate::handler::{check_response_complete, get_total_size, handle_range_request};
 use crate::utils::{self, fetch_with_retry, generate_cache_key, parse_range};
 
