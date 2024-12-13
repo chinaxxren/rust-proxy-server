@@ -29,6 +29,7 @@ pub struct ProxyCache {
 }
 
 impl ProxyCache {
+    
     pub async fn new() -> Result<Self> {
         let cache_dir = PathBuf::from(CACHE_DIR);
         if !cache_dir.exists() {
